@@ -11,13 +11,14 @@ html{
 }
 .container{
 	width: 960px;
-	margin: 0 auto;
+	margin: auto;
 }
 .banner{
 	height: 30rem;
 	background-image: url('../images/glasses-bg.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: 15%;
 }
 .header{
 	display: flex;
@@ -44,6 +45,9 @@ html{
 .header li{
 	display: inline-block;
 	margin: 1rem 2rem 1rem 1rem;
+}
+.mobile{
+	display: none;
 }
 .header a{
 	text-decoration: none;
@@ -81,7 +85,6 @@ html{
 .service img{
 	width: 5rem;
 	height: auto;
-/*	margin: 0 auto;*/
 	text-align: center;
 }
 .service.paper{
@@ -97,7 +100,6 @@ html{
 .service div{
 	height: 7rem;
 	margin:0 auto;
-	/*text-align: center;*/
 	width:5rem;
 }
 .service span{
@@ -117,8 +119,7 @@ html{
 	flex-direction: column;	
 }
 .info div{
-/*	padding:0.5rem 3rem 0.5rem 1.25rem;
-*/	margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 .info span{
 	background-color: cadetblue;
@@ -127,7 +128,6 @@ html{
 	font-size: 1rem;
 	padding:0.5rem 70px 0.5rem 1.25rem;
 	width: 650px;
-	/*margin-bottom: 1rem;*/
 	color: white;
 }
 .info p{
@@ -160,5 +160,99 @@ footer img{
 		padding:0.75rem 4rem;
 		margin-top: 5rem;
 		margin-right: 2rem;
+	}
+}
+@media only screen and (max-width: 790px){
+	.normal{
+		display: none;
+	}
+	.mobile{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+		list-style:none;
+	}
+	.banner{
+		background-position: 20%;
+	}
+}
+@media only screen and (max-width:685px){
+	.header span{
+		display: none;
+	}
+	.banner{
+		height: 17rem;
+		background-position: 20%;
+	}
+	.flex{
+		justify-content: center;
+	}
+	.message{
+		width:100%;
+		font-family: Helvetica, sans-serif;
+		font-size: 1rem;
+		padding:1rem auto;
+		text-align: center;
+		margin-top: 9rem;
+		margin-right: 0;
+	}
+	.services{
+		display: flex;	
+		align-items: center;
+		justify-content:center;
+		margin: 3.77rem auto;
+		flex-direction: column;	
+		height: auto;
+	}
+	.service{
+		margin:1.54rem auto;
+		height: auto;
+	}
+	.service div{
+		height: auto;
+	}
+	.service.paper{
+		margin-right: 3.95rem;
+	}
+	.services span{
+		font-family: Helvetica, sans-serif;
+		font-size: 0.77rem;
+		margin-top: 1rem;
+	}
+	.information{
+		flex-direction: column;	
+		align-items: center;
+		justify-content:center;
+	}
+	.info{
+		width: 100%;
+		margin:0;
+	}
+	.info div{
+		display: flex;
+		align-items: center;
+		text-align: center;	
+		background-color: cadetblue;
+		height: 2.5rem;
+	}
+	.info span{
+		width:100%;
+		padding: 0;
+		text-align: center;
+	}
+	.info p{
+		font-family: Helvetica, sans-serif;
+		font-size: 0.77rem;
+		margin-bottom: 4rem;
+		margin-top: 1rem;
+		margin-left: .75rem;
+	}
+	footer span{
+		display: none;
+	}
+	footer img{
+		margin: 4rem auto;
+		display: inline-block;	
 	}
 }
