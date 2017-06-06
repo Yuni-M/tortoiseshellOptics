@@ -49,15 +49,20 @@ html{
 	text-decoration: none;
 	color: white;
 }
+.flex{
+	display: flex;
+	justify-content: flex-end;	
+}
 .message{
 	font-family: Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 2rem;
 	background-color: white;
 	line-height: 2.4;
-	padding:1rem 3rem;
+	padding: 0.75rem 5rem;
 	display: inline-block;	
-	margin: 10rem -2rem 0 25rem;
+	margin-top: 10rem;
+	margin-right: -2rem;
 }
 .services{
 	display: flex;	
@@ -139,4 +144,21 @@ footer img{
 	margin: 4rem;
 	margin-right: 1rem;
 	display: inline-block;	
+}
+@media only screen and (max-width: 1024px){
+	.space{
+		display: none;	
+	}
+	.container{
+		width: 100%;
+	}
+	.banner{
+		height: 22rem;
+	}
+	.message{
+		font-size: 	1.33rem;
+		padding:0.75rem 4rem;
+		margin-top: 5rem;
+		margin-right: 2rem;
+	}
 }
